@@ -10,13 +10,13 @@ class DatabaseMethods {
   }
 
   Future<void> addMessage(
-      String messageId, String chatroomId, Map<String, dynamic> messageInfo) {
+      String messageId, String chatroomId, Map<String, dynamic> messageInfoData) {
     return FirebaseFirestore.instance
         .collection("chatrooms")
         .doc(chatroomId)
         .collection("chats")
         .doc(messageId)
-        .set(messageInfo);
+        .set(messageInfoData);
   }
 
   updateLastMessageSend(String chatroomId, Map<String, dynamic> LastMesaage) {
