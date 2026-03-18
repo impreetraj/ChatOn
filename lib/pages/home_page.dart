@@ -1,3 +1,4 @@
+import 'package:chat_app/services/shared_pref.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -8,6 +9,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+ 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -129,7 +132,6 @@ class _HomePageState extends State<HomePage> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
-                              
                               child: Row(
                                 children: [
                                   ClipRRect(
@@ -143,7 +145,8 @@ class _HomePageState extends State<HomePage> {
                                   Padding(
                                     padding: const EdgeInsets.only(left: 14.0),
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           "Preet Raj",
@@ -155,8 +158,8 @@ class _HomePageState extends State<HomePage> {
                                           "hyy how are you ?",
                                           style: TextStyle(
                                               fontSize: 17.0,
-                                              color:
-                                                  const Color.fromARGB(216, 0, 0, 0)),
+                                              color: const Color.fromARGB(
+                                                  216, 0, 0, 0)),
                                         )
                                       ],
                                     ),
@@ -167,7 +170,8 @@ class _HomePageState extends State<HomePage> {
                                     style: TextStyle(
                                         fontSize: 15.0,
                                         fontWeight: FontWeight.bold,
-                                        color: const Color.fromARGB(216, 0, 0, 0)),
+                                        color:
+                                            const Color.fromARGB(216, 0, 0, 0)),
                                   )
                                 ],
                               ),
